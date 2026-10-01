@@ -1,0 +1,15 @@
+# Excerpt of r3b-sm90-20513323.out (659884 bytes). sha256 of the full log is in ../FULL_LOGS.sha256.
+# Kept: provenance, concretization markers, per-package install times, counts, guards.
+
+[R3b START Wed Sep  9 01:21:00 UTC 2026] host=a177.anvil.rcac.purdue.edu job=20513323
+[PROVENANCE] spack=2f80bed spack-packages=c9c7cdc5
+[^]  4zoij3h      ^gmake@4.4.1~guile build_system=generic platform=linux os=ubuntu24.04 target=x86_64_v3 %c=gcc@13.3.0
+[e]  4x4sp2v      ^mpich@4.3.2~argobots~cuda+fortran~hwloc+hydra~level_zero+libxml2+pci~rocm+romio~slurm~vci~verbs~wrapperrpath~xpmem build_system=autotools datatype-engine=auto device=ch4 netmod=ofi pmi=default platform=linux os=ubuntu24.04 target=x86_64_v3
+[^]  koeln2z      ^pkgconf@2.5.1 build_system=autotools platform=linux os=ubuntu24.04 target=x86_64_v3 %c=gcc@13.3.0
+=== HASH GUARD vs provider lock ===
+HASH GUARD PASS
+[e] oionxrv cuda@12.9.1 /usr/local/cuda-12.9 (0s)
+[+] 67bc5j4 amrex@26.06 /tmp/e4s-specialized-amrex-sm90/linux-x86_64_v3/amrex-26.06-67bc5j4 (4m19s)
+[INSTALL rc=0 elapsed=309s]
+files: 1412  all-entries: 1608  apparent: 400M
+[R3b DONE Wed Sep  9 01:26:11 UTC 2026] rc=0

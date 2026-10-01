@@ -1,0 +1,18 @@
+# R3b — sm_90 specialized layer (H100 lane) against the same CPU provider.
+# Same shape as specialized-amrex-sm80/sm70; guard checks all non-amrex nodes
+# hash-match the provider lock before installing.
+spack:
+  upstreams:
+    e4s-provider-cpu:
+      install_tree: /tmp/e4s-provider-cpu
+  specs:
+  - amrex +cuda cuda_arch=90
+  view: false
+  concretizer:
+    unify: true
+  config:
+    install_tree:
+      root: /tmp/e4s-specialized-amrex-sm90
+    shared_linking:
+      type: rpath
+      bind: false

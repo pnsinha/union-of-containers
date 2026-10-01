@@ -1,0 +1,35 @@
+# Excerpt of r1-monolithic-20502921.out (7224538 bytes). sha256 of the full log is in ../FULL_LOGS.sha256.
+# Kept: provenance, concretization markers, per-package install times, counts, guards.
+
+[R1 START Tue Sep  8 19:02:52 UTC 2026] host=a239.anvil.rcac.purdue.edu job=20502921
+[PROVENANCE] spack=2f80bed spack-packages=c9c7cdc5
+[PROVENANCE] sif_sha16=a1c0d4ac6ac100da
+[e] 4x4sp2v mpich@4.3.2 /opt/mpi/pkgs/mpich-4.3.2 (0s)
+[e] jj453jr glibc@2.39 /usr (0s)
+[e] jt2squ5 gcc@13.3.0 /usr (0s)
+[e] oionxrv cuda@12.9.1 /usr/local/cuda-12.9 (0s)
+[+] sghkyxj ca-certificates-mozilla@2026-03-19 /tmp/e4s-monolithic-amrex-sm80/linux-x86_64_v3/ca-certificates-mozilla-2026-03-19-sghkyxj (0s)
+[+] 5ras4ko compiler-wrapper@1.1.0 /tmp/e4s-monolithic-amrex-sm80/linux-x86_64_v3/compiler-wrapper-1.1.0-5ras4ko (1s)
+[+] p4x6yaa gcc-runtime@13.3.0 /tmp/e4s-monolithic-amrex-sm80/linux-x86_64_v3/gcc-runtime-13.3.0-p4x6yaa (1s)
+[+] 4zoij3h gmake@4.4.1 /tmp/e4s-monolithic-amrex-sm80/linux-x86_64_v3/gmake-4.4.1-4zoij3h (16s)
+[+] koeln2z pkgconf@2.5.1 /tmp/e4s-monolithic-amrex-sm80/linux-x86_64_v3/pkgconf-2.5.1-koeln2z (6s)
+[+] wxxg7de ncurses@6.6 /tmp/e4s-monolithic-amrex-sm80/linux-x86_64_v3/ncurses-6.6-wxxg7de (1m07s)
+[+] 3pvz36m less@692 /tmp/e4s-monolithic-amrex-sm80/linux-x86_64_v3/less-692-3pvz36m (8s)
+[+] zndqxc6 readline@8.3 /tmp/e4s-monolithic-amrex-sm80/linux-x86_64_v3/readline-8.3-zndqxc6 (11s)
+[+] y5gfteq diffutils@3.12 /tmp/e4s-monolithic-amrex-sm80/linux-x86_64_v3/diffutils-3.12-y5gfteq (56s)
+[+] 666sb36 gdbm@1.26 /tmp/e4s-monolithic-amrex-sm80/linux-x86_64_v3/gdbm-1.26-666sb36 (10s)
+[+] jxtvfqg bzip2@1.0.8 /tmp/e4s-monolithic-amrex-sm80/linux-x86_64_v3/bzip2-1.0.8-jxtvfqg (3s)
+[+] va3dkf6 nghttp2@1.67.1 /tmp/e4s-monolithic-amrex-sm80/linux-x86_64_v3/nghttp2-1.67.1-va3dkf6 (19s)
+[+] pjxwrx2 perl@5.42.0 /tmp/e4s-monolithic-amrex-sm80/linux-x86_64_v3/perl-5.42.0-pjxwrx2 (6m17s)
+[+] bgtst3r openssl@3.6.1 /tmp/e4s-monolithic-amrex-sm80/linux-x86_64_v3/openssl-3.6.1-bgtst3r (1m06s)
+[+] vpkli65 curl@8.20.0 /tmp/e4s-monolithic-amrex-sm80/linux-x86_64_v3/curl-8.20.0-vpkli65 (36s)
+[+] brs7nmc cmake@3.31.11 /tmp/e4s-monolithic-amrex-sm80/linux-x86_64_v3/cmake-3.31.11-brs7nmc (2m37s)
+[+] a2ugptk amrex@26.06 /tmp/e4s-monolithic-amrex-sm80/linux-x86_64_v3/amrex-26.06-a2ugptk (4m23s)
+[INSTALL rc=0 elapsed=1019s]
+  files:        10772
+  all-entries:  12061
+  dirs:         1141
+  symlinks:     148
+  apparent:     665M
+  .spack-db files: 4
+[R1 DONE Tue Sep  8 19:23:23 UTC 2026] rc=0

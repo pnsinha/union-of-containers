@@ -1,0 +1,81 @@
+# Excerpt of provider-19747042.out (5588797 bytes). sha256 of the full log is in ../FULL_LOGS.sha256.
+# Kept: provenance, concretization markers, per-package install times, counts, guards.
+
+[PROVIDER START Sat Aug  8 21:58:46 UTC 2026] host=a058.anvil.rcac.purdue.edu SLURM_JOB_ID=19747042
+[e]  bqfkrxx      ^python@3.12.12+bz2+crypt+ctypes+dbm~debug+libxml2+lzma~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~static~tests~tkinter+uuid+zlib build_system=generic platform=linux os=ubuntu24.04 target=x86_64_v3
+[e] bqfkrxx python@3.12.12 /opt/python/pkgs/python-3.12.12 (0s)
+[e] jj453jr glibc@2.39 /usr (0s)
+[e] jt2squ5 gcc@13.3.0 /usr (0s)
+[e] 4x4sp2v mpich@4.3.2 /opt/mpi/pkgs/mpich-4.3.2 (0s)
+[+] sghkyxj ca-certificates-mozilla@2026-03-19 /tmp/e4s-provider-cpu/linux-x86_64_v3/ca-certificates-mozilla-2026-03-19-sghkyxj (0s)
+[+] 5ras4ko compiler-wrapper@1.1.0 /tmp/e4s-provider-cpu/linux-x86_64_v3/compiler-wrapper-1.1.0-5ras4ko (0s)
+[+] 3wb2dja python-venv@1.0 /tmp/e4s-provider-cpu/linux-x86_64_v3/python-venv-1.0-3wb2dja (0s)
+[+] p4x6yaa gcc-runtime@13.3.0 /tmp/e4s-provider-cpu/linux-x86_64_v3/gcc-runtime-13.3.0-p4x6yaa (0s)
+[+] cv5n26p py-pip@26.1.2 /tmp/e4s-provider-cpu/linux-x86_64_v3/py-pip-26.1.2-cv5n26p (2s)
+[+] rkrnifl py-wheel@0.45.1 /tmp/e4s-provider-cpu/linux-x86_64_v3/py-wheel-0.45.1-rkrnifl (1s)
+[+] 6fvbts7 py-setuptools@82.0.1 /tmp/e4s-provider-cpu/linux-x86_64_v3/py-setuptools-82.0.1-6fvbts7 (1s)
+[+] qj7pb4n py-flit-core@3.12.0 /tmp/e4s-provider-cpu/linux-x86_64_v3/py-flit-core-3.12.0-qj7pb4n (1s)
+[+] slwakxy py-packaging@26.2 /tmp/e4s-provider-cpu/linux-x86_64_v3/py-packaging-26.2-slwakxy (1s)
+[+] d5tq2mt py-pyproject-metadata@0.11.0 /tmp/e4s-provider-cpu/linux-x86_64_v3/py-pyproject-metadata-0.11.0-d5tq2mt (0s)
+[+] 4zoij3h gmake@4.4.1 /tmp/e4s-provider-cpu/linux-x86_64_v3/gmake-4.4.1-4zoij3h (18s)
+[+] koeln2z pkgconf@2.5.1 /tmp/e4s-provider-cpu/linux-x86_64_v3/pkgconf-2.5.1-koeln2z (7s)
+[+] nyk4twq zlib-ng@2.3.3 /tmp/e4s-provider-cpu/linux-x86_64_v3/zlib-ng-2.3.3-nyk4twq (12s)
+[+] okz7dhn libiconv@1.18 /tmp/e4s-provider-cpu/linux-x86_64_v3/libiconv-1.18-okz7dhn (46s)
+[+] ep2gbvj berkeley-db@18.1.40 /tmp/e4s-provider-cpu/linux-x86_64_v3/berkeley-db-18.1.40-ep2gbvj (1m24s)
+[+] jojjzh6 py-cython@3.2.4 /tmp/e4s-provider-cpu/linux-x86_64_v3/py-cython-3.2.4-jojjzh6 (2m51s)
+[+] 3pvz36m less@692 /tmp/e4s-provider-cpu/linux-x86_64_v3/less-692-3pvz36m (13s)
+[+] zndqxc6 readline@8.3 /tmp/e4s-provider-cpu/linux-x86_64_v3/readline-8.3-zndqxc6 (21s)
+      -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's/@''GNULIB_GETPASS''@/0/g' \
+      -e 's/@''GNULIB_GETPASS_GNU''@/0/g' \
+      -e 's|@''HAVE_GETPASS''@|1|g' \
+      -e 's|@''REPLACE_GETPASS''@|0|g' \
+      -e 's|@''REPLACE_GETPASS_FOR_GETPASS_GNU''@|0|g' \
+      -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''GUARD_PREFIX''@|GL|g' \
+[+] payncrn meson@1.11.1 /tmp/e4s-provider-cpu/linux-x86_64_v3/meson-1.11.1-payncrn (25s)
+      -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''GUARD_PREFIX''@|GL|g' \
+[+] u2y34pa py-meson-python@0.19.0 /tmp/e4s-provider-cpu/linux-x86_64_v3/py-meson-python-0.19.0-u2y34pa (2s)
+[+] 666sb36 gdbm@1.26 /tmp/e4s-provider-cpu/linux-x86_64_v3/gdbm-1.26-666sb36 (19s)
+[+] y5gfteq diffutils@3.12 /tmp/e4s-provider-cpu/linux-x86_64_v3/diffutils-3.12-y5gfteq (1m35s)
+[+] va3dkf6 nghttp2@1.67.1 /tmp/e4s-provider-cpu/linux-x86_64_v3/nghttp2-1.67.1-va3dkf6 (22s)
+[+] v5yfeyr fftw@3.3.11 /tmp/e4s-provider-cpu/linux-x86_64_v3/fftw-3.3.11-v5yfeyr (6m13s)
+[+] pjxwrx2 perl@5.42.0 /tmp/e4s-provider-cpu/linux-x86_64_v3/perl-5.42.0-pjxwrx2 (3m41s)
+[+] bgtst3r openssl@3.6.1 /tmp/e4s-provider-cpu/linux-x86_64_v3/openssl-3.6.1-bgtst3r (1m34s)
+[+] vpkli65 curl@8.20.0 /tmp/e4s-provider-cpu/linux-x86_64_v3/curl-8.20.0-vpkli65 (44s)
+[+] me4vq6w openblas@0.3.33 /tmp/e4s-provider-cpu/linux-x86_64_v3/openblas-0.3.33-me4vq6w (9m27s)
+[+] svqlulu py-numpy@2.4.6 /tmp/e4s-provider-cpu/linux-x86_64_v3/py-numpy-2.4.6-svqlulu (1m15s)
+[+] brs7nmc cmake@3.31.11 /tmp/e4s-provider-cpu/linux-x86_64_v3/cmake-3.31.11-brs7nmc (3m17s)
+[+] ksq3blx heffte@2.4.1 /tmp/e4s-provider-cpu/linux-x86_64_v3/heffte-2.4.1-ksq3blx (39s)
+[+] ym56bx6 amrex@26.06 /tmp/e4s-provider-cpu/linux-x86_64_v3/amrex-26.06-ym56bx6 (2m17s)
+files: 15245
+[INSTALL rc=0 Sat Aug  8 22:14:21 UTC 2026]
+[PROVIDER DONE Sat Aug  8 22:14:33 UTC 2026] rc=0

@@ -1,0 +1,69 @@
+[R5/R6-A100 START Wed Sep  9 23:32:46 UTC 2026] host=g011 job=20516623
+NVIDIA A100-SXM4-40GB, 580.105.08, 8.0
+=== R5 RUN L=layered-sm80 (5 reps) ===
+L-rep1 MF-BENCH n=256 steps=500 time_s=0.116299547 checksum=8388608000
+L-rep2 MF-BENCH n=256 steps=500 time_s=0.111108406 checksum=8388608000
+L-rep3 MF-BENCH n=256 steps=500 time_s=0.111555878 checksum=8388608000
+L-rep4 MF-BENCH n=256 steps=500 time_s=0.111295167 checksum=8388608000
+L-rep5 MF-BENCH n=256 steps=500 time_s=0.111321887 checksum=8388608000
+--- resolution evidence (layered) ---
+	libfftw3.so.3 => /tmp/e4s-provider-cpu/linux-x86_64_v3/fftw-3.3.11-v5yfeyr/lib/libfftw3.so.3 (0x000015332e91f000)
+=== R5 RUN M=mono-sm80 (5 reps) ===
+M-rep1 MF-BENCH n=256 steps=500 time_s=0.111512737 checksum=8388608000
+M-rep2 MF-BENCH n=256 steps=500 time_s=0.111794698 checksum=8388608000
+M-rep3 MF-BENCH n=256 steps=500 time_s=0.111398432 checksum=8388608000
+M-rep4 MF-BENCH n=256 steps=500 time_s=0.11150333 checksum=8388608000
+M-rep5 MF-BENCH n=256 steps=500 time_s=0.111431805 checksum=8388608000
+--- resolution evidence (mono) ---
+	libfftw3.so.3 => /tmp/e4s-provider-cpu/linux-x86_64_v3/fftw-3.3.11-v5yfeyr/lib/libfftw3.so.3 (0x000014fdd7b1f000)
+=== R5 RUN N=E4S-native (5 reps, toolchain caveat) ===
+N-rep1 MF-BENCH n=256 steps=500 time_s=0.11162033 checksum=8388608000
+N-rep2 MF-BENCH n=256 steps=500 time_s=0.112103879 checksum=8388608000
+N-rep3 MF-BENCH n=256 steps=500 time_s=0.111937456 checksum=8388608000
+N-rep4 MF-BENCH n=256 steps=500 time_s=0.111673429 checksum=8388608000
+N-rep5 MF-BENCH n=256 steps=500 time_s=0.111348829 checksum=8388608000
+=== R6 CONCURRENCY (two containers, one provider) ===
+overlap-check:
+    PID     ELAPSED CMD
+ 928102       00:05 Apptainer runtime parent: e4s-cuda-26.06-cuda80.sif
+R6: A rc=0 B rc=0
+--- A log ---
+ERROR: ld.so: object '/apps/anvil/external/apps/xalt2/xalt/xalt/lib64/libxalt_init.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/apps/anvil/external/apps/xalt2/xalt/xalt/lib64/libxalt_init.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+A: pid 928033 start=23:33:08
+ERROR: ld.so: object '/apps/anvil/external/apps/xalt2/xalt/xalt/lib64/libxalt_init.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/apps/anvil/external/apps/xalt2/xalt/xalt/lib64/libxalt_init.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/apps/anvil/external/apps/xalt2/xalt/xalt/lib64/libxalt_init.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/apps/anvil/external/apps/xalt2/xalt/xalt/lib64/libxalt_init.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+A: cross-tree (provider) resolved deps: 3
+ERROR: ld.so: object '/apps/anvil/external/apps/xalt2/xalt/xalt/lib64/libxalt_init.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+Initializing AMReX (26.06)...
+MPI initialized with 1 MPI processes
+MPI initialized with thread support level 0
+Initializing CUDA...
+CUDA initialized with 1 device.
+AMReX (26.06) initialized
+MF-BENCH n=256 steps=4000 time_s=0.892297344 checksum=6.7108864e+10
+Total GPU global memory (MB) spread across MPI: [40441 ... 40441]
+Free  GPU global memory (MB) spread across MPI: [9681 ... 9681]
+[The         Arena] max space (MB) allocated spread across MPI: [30331 ... 30331]
+[The         Arena] max space (MB) used      spread across MPI: [181 ... 181]
+[The Managed Arena] max space (MB) allocated spread across MPI: [8 ... 8]
+[The Managed Arena] max space (MB) used      spread across MPI: [0 ... 0]
+[The  Pinned Arena] max space (MB) allocated spread across MPI: [8 ... 8]
+[The  Pinned Arena] max space (MB) used      spread across MPI: [0 ... 0]
+AMReX (26.06) finalized
+ERROR: ld.so: object '/apps/anvil/external/apps/xalt2/xalt/xalt/lib64/libxalt_init.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+A: rc=0 end=23:33:10
+--- B log ---
+ERROR: ld.so: object '/apps/anvil/external/apps/xalt2/xalt/xalt/lib64/libxalt_init.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/apps/anvil/external/apps/xalt2/xalt/xalt/lib64/libxalt_init.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+B: pid 928124 start=23:33:11
+B: TMP-ISOLATED (--contain private /tmp)
+ERROR: ld.so: object '/apps/anvil/external/apps/xalt2/xalt/xalt/lib64/libxalt_init.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+B: python=/opt/python/pkgs/python-3.12.12/bin/python3.12 numpy=/tmp/e4s-provider-cpu/linux-x86_64_v3/py-numpy-2.4.6-svqlulu/lib/python3.12/site-packages
+ERROR: ld.so: object '/apps/anvil/external/apps/xalt2/xalt/xalt/lib64/libxalt_init.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+B: NUMPY-FFT ok seconds=3.72 checksum=2.199e+09
+ERROR: ld.so: object '/apps/anvil/external/apps/xalt2/xalt/xalt/lib64/libxalt_init.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+B: rc=0 end=23:33:17
+[R5/R6-A100 DONE Wed Sep  9 23:33:17 UTC 2026]

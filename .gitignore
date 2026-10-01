@@ -1,0 +1,9 @@
+scripts/site.env
+logs/*
+!logs/.gitkeep
+*.sif
+*.sqsh
+trees/
+stage/
+__pycache__/
+.DS_Store

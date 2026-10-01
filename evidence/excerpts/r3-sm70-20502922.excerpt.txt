@@ -1,0 +1,18 @@
+# Excerpt of r3-sm70-20502922.out (737403 bytes). sha256 of the full log is in ../FULL_LOGS.sha256.
+# Kept: provenance, concretization markers, per-package install times, counts, guards.
+
+[R3 START Tue Sep  8 19:35:38 UTC 2026] host=a232.anvil.rcac.purdue.edu job=20502922
+[PROVENANCE] spack=2f80bed spack-packages=c9c7cdc5
+[PROVENANCE] sif_sha16=a1c0d4ac6ac100da
+[^]  p4x6yaa      ^gcc-runtime@13.3.0 build_system=generic platform=linux os=ubuntu24.04 target=x86_64_v3
+[e]  jj453jr      ^glibc@2.39 build_system=autotools platform=linux os=ubuntu24.04 target=x86_64_v3
+[^]  4zoij3h      ^gmake@4.4.1~guile build_system=generic platform=linux os=ubuntu24.04 target=x86_64_v3 %c=gcc@13.3.0
+[e]  4x4sp2v      ^mpich@4.3.2~argobots~cuda+fortran~hwloc+hydra~level_zero+libxml2+pci~rocm+romio~slurm~vci~verbs~wrapperrpath~xpmem build_system=autotools datatype-engine=auto device=ch4 netmod=ofi pmi=default platform=linux os=ubuntu24.04 target=x86_64_v3
+[^]  koeln2z      ^pkgconf@2.5.1 build_system=autotools platform=linux os=ubuntu24.04 target=x86_64_v3 %c=gcc@13.3.0
+=== HASH GUARD vs sm80 lock ===
+HASH GUARD PASS
+[e] oionxrv cuda@12.9.1 /usr/local/cuda-12.9 (0s)
+[+] 6gaotlr amrex@26.06 /tmp/e4s-specialized-amrex-sm70/linux-x86_64_v3/amrex-26.06-6gaotlr (5m01s)
+[INSTALL rc=0 elapsed=362s]
+files: 1412  all-entries: 1608  dirs: 192  symlinks: 4  apparent: 399M
+[R3 DONE Tue Sep  8 19:42:12 UTC 2026] rc=0

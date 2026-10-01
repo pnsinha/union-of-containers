@@ -1,0 +1,7 @@
+AMReXConfig=/spack/opt/spack/linux-x86_64_v3/amrex-26.05-7ctgenbsln5uukkcynlvdj7n6wpc4qxy/lib/cmake/AMReX/AMReXConfig.cmake
+fftw=/spack/opt/spack/linux-x86_64_v3/fftw-3.3.11-affqonfv4qsxu7b67qinubmqul7sf43i/lib/libfftw3.so
+  installed.
+
+
+-- Configuring incomplete, errors occurred!
+BUILD-NATIVE FAILED

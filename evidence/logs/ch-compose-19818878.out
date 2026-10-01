@@ -1,0 +1,22 @@
+[CH COMPOSE START Wed Aug 12 06:13:05 UTC 2026] host=a027.anvil.rcac.purdue.edu
+=== ch-run version ===
+0.38
+
+########## Phase 0: prepare Charliecloud base image (SIF -> dir) ##########
+converting /anvil/scratch/x-psinha1/containers/e4s-cuda-26.06-cuda80.sif -> /anvil/scratch/x-psinha1/union-anvil/charliecloud/e4s-cuda-dir ...
+629664 inodes (1196870 blocks) to write
+
+
+[unsquashfs progress, last value before failure: 1260454/1826534  69%; progress-bar lines removed from this copy]
+FATAL ERROR: write_file: failed to create file /image/rootfs/usr/lib/google-cloud-sdk/lib/third_party/kubernetes/client/models/__pycache__/v1_non_resource_attributes.cpython-314.pyc, because Disk quota exceeded
+: exit status 1
+directory image: 
+=== image sanity ===
+ls: cannot access '/anvil/scratch/x-psinha1/union-anvil/charliecloud/e4s-cuda-dir/bin/bash': No such file or directory
+ch-run can enter: 
+ch-run[2475740]: error: can't stat: /anvil/scratch/x-psinha1/union-anvil/charliecloud/e4s-cuda-dir: No such file or directory (ch_core.c:401 2)
+
+########## Phase 1: compose both layers + verify cross-tree RPATH ##########
+=== bind both trees at canonical /tmp paths ===
+ch-run[2475746]: error: can't stat: /anvil/scratch/x-psinha1/union-anvil/charliecloud/e4s-cuda-dir: No such file or directory (ch_core.c:401 2)
+[CH COMPOSE DONE Wed Aug 12 06:29:20 UTC 2026] rc=0

@@ -1,0 +1,31 @@
+[M6 START Wed Aug 12 21:10:28 UTC 2026] host=a205.anvil.rcac.purdue.edu
+
+########## Prepare layouts ##########
+--- 1. GPFS directory (existing) ---
+files: 15245, size: 809M
+--- 2. squashfs ---
+creating squashfs via ch-convert...
+discarding xattrs...
+error: invalid format: squashfs
+ls: cannot access '/anvil/scratch/x-psinha1/union-anvil/charliecloud/provider.sqfs': No such file or directory
+sqfs: 
+mounting via squashfuse...
+Can't open squashfs image: No such file or directory
+squashfuse mount may have backgrounded; checking...
+--- 3. local SSD copy ---
+ssd: 15245 files
+
+########## Metadata benchmark: stat all files ##########
+--- stat all 15,245 files ---
+GPFS-dir : cold=39626ms  warm1=39392ms  warm2=39443ms
+squashfs: cold=8ms  warm1=5ms  warm2=5ms
+SSD-dir : cold=32364ms  warm1=32925ms  warm2=32617ms
+
+########## Metadata benchmark: readdir (ls -R) ##########
+--- ls -R full tree ---
+GPFS-dir : cold=678ms  warm=153ms
+squashfs: cold=5ms  warm=5ms
+SSD-dir : cold=33ms  warm=32ms
+
+########## Cleanup ########==
+[M6 DONE Wed Aug 12 21:14:33 UTC 2026]

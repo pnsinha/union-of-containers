@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this artifact, please cite the SC26 poster."
+title: "Union of Containers: Layered Software Stacks with Cross-Container Dependency Reuse for HPC (SC26 poster artifact)"
+authors:
+  - family-names: Sinha
+    given-names: Parmanand
+    affiliation: "University of Chicago Research Computing Center"
+type: software
+license: BSD-3-Clause
+date-released: 2026-11-01

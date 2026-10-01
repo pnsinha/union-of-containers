@@ -1,0 +1,21 @@
+# Excerpt of r2b-heffte-20502923.out (233773 bytes). sha256 of the full log is in ../FULL_LOGS.sha256.
+# Kept: provenance, concretization markers, per-package install times, counts, guards.
+
+[R2b START Tue Sep  8 19:40:18 UTC 2026] host=a071.anvil.rcac.purdue.edu job=20502923
+[PROVENANCE] spack=2f80bed spack-packages=c9c7cdc5
+[PROVENANCE] sif_sha16=a1c0d4ac6ac100da
+[e]  jt2squ5      ^gcc@13.3.0+binutils+bootstrap~graphite+libsanitizer~mold~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++,fortran' platform=linux os=ubuntu24.04 target=x86_64_v3
+[^]  p4x6yaa      ^gcc-runtime@13.3.0 build_system=generic platform=linux os=ubuntu24.04 target=x86_64_v3
+[e]  jj453jr      ^glibc@2.39 build_system=autotools platform=linux os=ubuntu24.04 target=x86_64_v3
+[^]  4zoij3h      ^gmake@4.4.1~guile build_system=generic platform=linux os=ubuntu24.04 target=x86_64_v3 %c=gcc@13.3.0
+[e]  4x4sp2v      ^mpich@4.3.2~argobots~cuda+fortran~hwloc+hydra~level_zero+libxml2+pci~rocm+romio~slurm~vci~verbs~wrapperrpath~xpmem build_system=autotools datatype-engine=auto device=ch4 netmod=ofi pmi=default platform=linux os=ubuntu24.04 target=x86_64_v3
+=== HASH GUARD vs provider lock ===
+buildable nodes NOT in provider lock: ['heffte']
+HASH GUARD PASS
+[e] oionxrv cuda@12.9.1 /usr/local/cuda-12.9 (0s)
+[+] wdcwwsk heffte@2.4.1 /tmp/e4s-specialized-heffte-sm80/linux-x86_64_v3/heffte-2.4.1-wdcwwsk (37s)
+[INSTALL rc=0 elapsed=84s]
+files: 66  all-entries: 93  dirs: 25  symlinks: 2  apparent: 2.6M
+reused [^]: 2
+external [e]: 4
+[R2b DONE Tue Sep  8 19:42:22 UTC 2026] rc=0

@@ -1,0 +1,16 @@
+# Excerpt of specialized-19747874.out (660766 bytes). sha256 of the full log is in ../FULL_LOGS.sha256.
+# Kept: provenance, concretization markers, per-package install times, counts, guards.
+
+[SPECIALIZED START Sat Aug  8 22:46:59 UTC 2026] host=a086.anvil.rcac.purdue.edu SLURM_JOB_ID=19747874
+[e]  oionxrv      ^cuda@12.9.1~allow-unsupported-compilers~dev build_system=generic platform=linux os=ubuntu24.04 target=x86_64_v3
+[e]  jt2squ5      ^gcc@13.3.0+binutils+bootstrap~graphite+libsanitizer~mold~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++,fortran' platform=linux os=ubuntu24.04 target=x86_64_v3
+[^]  p4x6yaa      ^gcc-runtime@13.3.0 build_system=generic platform=linux os=ubuntu24.04 target=x86_64_v3
+[e]  jj453jr      ^glibc@2.39 build_system=autotools platform=linux os=ubuntu24.04 target=x86_64_v3
+[^]  4zoij3h      ^gmake@4.4.1~guile build_system=generic platform=linux os=ubuntu24.04 target=x86_64_v3 %c=gcc@13.3.0
+[e]  4x4sp2v      ^mpich@4.3.2~argobots~cuda+fortran~hwloc+hydra~level_zero+libxml2+pci~rocm+romio~slurm~vci~verbs~wrapperrpath~xpmem build_system=autotools datatype-engine=auto device=ch4 netmod=ofi pmi=default platform=linux os=ubuntu24.04 target=x86_64_v3
+[^]  koeln2z      ^pkgconf@2.5.1 build_system=autotools platform=linux os=ubuntu24.04 target=x86_64_v3 %c=gcc@13.3.0
+[e] oionxrv cuda@12.9.1 /usr/local/cuda-12.9 (0s)
+[+] a2ugptk amrex@26.06 /tmp/e4s-specialized-amrex-sm80/linux-x86_64_v3/amrex-26.06-a2ugptk (8m44s)
+files: 1412
+[INSTALL rc=0 Sat Aug  8 22:56:20 UTC 2026]
+[SPECIALIZED DONE Sat Aug  8 22:56:22 UTC 2026] rc=0

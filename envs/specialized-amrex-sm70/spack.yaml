@@ -1,0 +1,18 @@
+# R3 — sm_70 specialized layer (Layer 2b) against the same CPU provider via upstreams.
+# Same env shape as specialized-amrex-sm80, only cuda_arch=70 differs.
+# Hash guard in the job aborts before install unless 23/24 nodes match the sm80 lock.
+spack:
+  upstreams:
+    e4s-provider-cpu:
+      install_tree: /tmp/e4s-provider-cpu
+  specs:
+  - amrex +cuda cuda_arch=70
+  view: false
+  concretizer:
+    unify: true
+  config:
+    install_tree:
+      root: /tmp/e4s-specialized-amrex-sm70
+    shared_linking:
+      type: rpath
+      bind: false

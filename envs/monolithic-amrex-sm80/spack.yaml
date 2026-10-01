@@ -1,0 +1,16 @@
+# R1 — Same-scope monolithic baseline: the specialized env's exact DAG (24 specs:
+# 20 buildable + 4 external) built standalone in ONE tree, no upstreams.
+# Lock copied verbatim from specialized-amrex-sm80 -> identical hashes.
+# Counting convention (fixed 2026-09-08): files = `find -type f`; all-entries/dirs/symlinks recorded too.
+spack:
+  specs:
+  - amrex +cuda cuda_arch=80
+  view: false
+  concretizer:
+    unify: true
+  config:
+    install_tree:
+      root: /tmp/e4s-monolithic-amrex-sm80
+    shared_linking:
+      type: rpath
+      bind: false

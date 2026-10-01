@@ -1,0 +1,17 @@
+cp: '/anvil/scratch/x-psinha1/union-anvil/stage/r5r6/mfbench.cu' and '/anvil/scratch/x-psinha1/union-anvil/stage/r5r6/mfbench.cu' are the same file
+=== R5 BUILD (layered) ===
+-- Configuring done (10.4s)
+-- Generating done (0.6s)
+-- Build files have been written to: /anvil/scratch/x-psinha1/union-anvil/stage/r5r6/build-layered
+[ 66%] Linking CUDA device code CMakeFiles/mfbench.dir/cmake_device_link.o
+[100%] Linking CUDA executable mfbench
+[100%] Built target mfbench
+R5-LAYERED-BUILD OK
+=== R5 BUILD (E4S-native comparator) ===
+image AMReXConfig: /spack/opt/spack/linux-x86_64_v3/amrex-26.05-7ctgenbsln5uukkcynlvdj7n6wpc4qxy/lib/cmake/AMReX/AMReXConfig.cmake
+image fftw lib:    /spack/opt/spack/linux-x86_64_v3/fftw-3.3.11-affqonfv4qsxu7b67qinubmqul7sf43i/lib/libfftw3.so
+
+
+-- Configuring incomplete, errors occurred!
+R5-NATIVE-BUILD FAILED
+[R5 BUILD DONE Wed Sep  9 02:25:18 UTC 2026]

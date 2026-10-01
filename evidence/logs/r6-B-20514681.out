@@ -1,0 +1,10 @@
+ERROR: ld.so: object '/apps/anvil/external/apps/xalt2/xalt/xalt/lib64/libxalt_init.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/apps/anvil/external/apps/xalt2/xalt/xalt/lib64/libxalt_init.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+B: pid 2736160 start=22:52:49
+B: TMP-ISOLATED (--contain private /tmp)
+ERROR: ld.so: object '/apps/anvil/external/apps/xalt2/xalt/xalt/lib64/libxalt_init.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+B: python=/opt/python/pkgs/python-3.12.12/bin/python3.12 numpy=/tmp/e4s-provider-cpu/linux-x86_64_v3/py-numpy-2.4.6-svqlulu/lib/python3.12/site-packages
+ERROR: ld.so: object '/apps/anvil/external/apps/xalt2/xalt/xalt/lib64/libxalt_init.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+B: NUMPY-FFT ok seconds=3.45 checksum=2.200e+09
+ERROR: ld.so: object '/apps/anvil/external/apps/xalt2/xalt/xalt/lib64/libxalt_init.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+B: rc=0 end=22:52:55

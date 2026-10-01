@@ -1,0 +1,14 @@
+spec90 amrex prefix: amrex-26.06-67bc5j4
+mono90 amrex prefix: amrex-26.06-67bc5j4  fftw prefix: fftw-3.3.11-v5yfeyr
+=== BUILD layered-sm90 ===
+-- Generating done (0.3s)
+-- Build files have been written to: /anvil/scratch/x-psinha1/union-anvil/stage/r5r6-sm90/build-layered-sm90
+[100%] Linking CUDA executable mfbench
+[100%] Built target mfbench
+BUILD-LAYERED-SM90 OK
+=== BUILD mono-sm90 ===
+-- Generating done (0.0s)
+-- Build files have been written to: /anvil/scratch/x-psinha1/union-anvil/stage/r5r6-sm90/build-mono-sm90
+[100%] Linking CUDA executable mfbench
+[100%] Built target mfbench
+BUILD-MONO-SM90 OK

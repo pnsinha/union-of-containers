@@ -1,0 +1,16 @@
+# R1b — monolithic sm_90 comparator (H100 lane): same spec + fftw in ONE tree,
+# no upstreams. Parity experiment: identical recipes/hashes, only variable is
+# arrangement (one tree vs provider+specialized two trees).
+spack:
+  specs:
+  - amrex +cuda cuda_arch=90
+  - fftw
+  view: false
+  concretizer:
+    unify: true
+  config:
+    install_tree:
+      root: /tmp/e4s-monolithic-amrex-sm90
+    shared_linking:
+      type: rpath
+      bind: false

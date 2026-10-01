@@ -1,0 +1,6 @@
+-- Generating done (0.7s)
+-- Build files have been written to: /anvil/scratch/x-psinha1/union-anvil/stage/r5r6/build-mono-sm80
+[100%] Linking CUDA executable mfbench
+[100%] Built target mfbench
+BUILD-MONO-SM80 OK
+[R5C DONE Wed Sep  9 02:25:07 UTC 2026]

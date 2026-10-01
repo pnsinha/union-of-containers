@@ -1,0 +1,19 @@
+# R2b — Second application's specialized layer: heFFTe GPU build reusing the
+# 36-package CPU provider. Variants match the provider's heffte root (+fftw +shared,
+# build_type=Release) with +cuda cuda_arch=80 added. Guard: every buildable non-heffte
+# node must hash-match the provider lock.
+spack:
+  upstreams:
+    e4s-provider-cpu:
+      install_tree: /tmp/e4s-provider-cpu
+  specs:
+  - heffte@2.4.1 +fftw +shared +cuda cuda_arch=80
+  view: false
+  concretizer:
+    unify: true
+  config:
+    install_tree:
+      root: /tmp/e4s-specialized-heffte-sm80
+    shared_linking:
+      type: rpath
+      bind: false
